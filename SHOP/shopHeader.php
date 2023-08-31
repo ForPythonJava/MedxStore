@@ -73,35 +73,6 @@
                                         <a class="dropdown-item" href="viewMedicine.php">Medicine</a>
                                     </div>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="shop.html">shop</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">pages</a>
-                                    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                                        <a class="dropdown-item" href="about.html">about</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="faq.html">faq</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="shop.html">shop</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="shop-left-sidebar.html">shop left sidebar</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="shop-right-sidebar.html">shop right sidebar</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="single-product.html">product details</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="blog.html">blog</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="blog-single.html">blog details</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="contact.html">contact</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="blog.html">news</a>
-                                </li>
                             </ul>
                         </div>
                     </nav>

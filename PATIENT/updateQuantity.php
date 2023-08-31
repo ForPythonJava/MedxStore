@@ -42,11 +42,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     } else {
         // Return an error response for invalid action
-        echo json_encode(array('success' => false, 'error' => 'Invalid action'));
+        echo json_encode(array('success' => false, 'error' => 'Invalid Action'));
     }
 } else {
     // Return an error response for invalid request method
-    echo json_encode(array('success' => false, 'error' => 'Invalid request method'));
+    echo json_encode(array('success' => false, 'error' => 'Invalid Request Method'));
 }
 
 

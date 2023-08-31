@@ -122,6 +122,10 @@ if (mysqli_num_rows($result) < 1) {
                                     <p id="statusPay">
                                     <?php echo $row['status'] ?>
                                     </p>
+                            <?php } else { ?>
+                                    <p id="statusPay">
+                                    <?php echo $row['status'] ?>
+                                    </p>
                             <?php } ?>
                         </td>
                     </tr>

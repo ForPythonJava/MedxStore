@@ -63,7 +63,7 @@ $result = mysqli_query($conn, $qry);
 if (mysqli_num_rows($result) < 1) {
     ?>
     <center>
-        <h1 id="nodata" class="m-3">Cart is Empty</h1>
+        <h1 id="nodata" class="m-3">No Orders</h1>
     </center>
     <?php
 
@@ -113,7 +113,9 @@ if (mysqli_num_rows($result) < 1) {
                         <td>
                             <img src="../assets/image/<?php echo $row['image'] ?>" alt="img" id="img">
                         </td>
-                        <td id="statusPay"><?php echo $row['status'] ?></td>
+                        <td id="statusPay">
+                            <?php echo $row['status'] ?>
+                        </td>
                     </tr>
                     <?php
                 }
