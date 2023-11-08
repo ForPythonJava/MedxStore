@@ -14,7 +14,7 @@ include '../DBConnection/dbconnection.php';
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb slider-breadcrumb">
-                        <li class="breadcrumb-item"><a href="../index.php">Home</a></li>
+                        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Delivery Boy
                 </nav>
             </div>
@@ -39,15 +39,11 @@ include '../DBConnection/dbconnection.php';
                         <h2>Sign Up Now</h2>
                     </div>
                     <form class="form-details" method="post">
-                        <input type="text" placeholder="Name" class="form-control-text" required pattern="[a-z A-Z]+"
-                            name="name">
+                        <input type="text" placeholder="Name" class="form-control-text" required pattern="[a-z A-Z]+" name="name">
                         <input type="email" placeholder="E-mail" class="form-control-text" required name="email">
-                        <input type="text" placeholder="Phone" class="form-control-text" pattern="[6789][0-9]{9}"
-                            maxlength="10" minlength="10" required name="phone">
-                        <input type="password" placeholder="Password" class="form-control-text" required
-                            name="password">
-                        <textarea placeholder="Address" class="form-control-textarea" name="address"
-                            required></textarea>
+                        <input type="text" placeholder="Phone" class="form-control-text" pattern="[6789][0-9]{9}" maxlength="10" minlength="10" required name="phone">
+                        <input type="password" placeholder="Password" class="form-control-text" required name="password">
+                        <textarea placeholder="Address" class="form-control-textarea" name="address" required></textarea>
                         <button type="submit" class="btn btn-Shop Message" name="deliveryReg">SignUp
                             <i class="fas fa-long-arrow-alt-right"></i></button>
                     </form>

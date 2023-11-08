@@ -14,7 +14,7 @@ include '../DBConnection/dbconnection.php';
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb slider-breadcrumb">
-                        <li class="breadcrumb-item"><a href="../index.php">Home</a></li>
+                        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Login</li>
                     </ol>
                 </nav>
@@ -41,8 +41,7 @@ include '../DBConnection/dbconnection.php';
                     </div>
                     <form class="form-details" method="post">
                         <input type="email" placeholder="Your E-mail" class="form-control-text" name="email" required>
-                        <input type="password" placeholder="Password" class="form-control-text" name="password"
-                            required>
+                        <input type="password" placeholder="Password" class="form-control-text" name="password" required>
                         <button type="submit" class="btn btn-Shop Message" name="login">SignIn
                             <i class="fas fa-long-arrow-alt-right"></i></button>
                     </form>

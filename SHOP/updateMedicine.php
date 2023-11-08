@@ -61,7 +61,7 @@ $query = "SELECT * FROM `medicine` WHERE `med_id`='$med_id'";
 $result = $conn->query($query);
 if ($result->num_rows > 0) {
     $data = $result->fetch_assoc();
-    ?>
+?>
     <!-- contact-form -->
     <div class="contact-form-area">
         <div class="container">
@@ -80,28 +80,18 @@ if ($result->num_rows > 0) {
                         <form class="form-details" method="post" enctype="multipart/form-data">
                             <div class="image-upload text-center" style="margin-bottom: 30px">
                                 <label for="file-input">
-                                    <img id="img" src="../assets/images/upload.png" alt="Upload Image"
-                                        style="margin: auto" />
+                                    <img id="img" src="../assets/image/<?php echo $data['image'] ?>" alt="Upload Image" style="margin: auto" />
                                 </label>
                                 <h3>Select Medicine Image</h3>
                                 <input id="file-input" onchange="readURL(this)" name="imgfile" type="file" />
                             </div>
-                            <input type="text" placeholder="Name" class="form-control-text"
-                                value="<?php echo $data['name'] ?>" required pattern="[a-z A-Z]+" name="name"
-                                title="Medicine Name">
-                            <input type="text" placeholder="Dose" class="form-control-text" pattern="[0-9]+" required
-                                value="<?php echo $data['dose'] ?>" name="dose" title="Dose">
-                            <input type="text" class="form-control-text" required name="mfgdate"
-                                value="<?php echo $data['mfgdate'] ?>" placeholder="Manufactured Date"
-                                title="Manufactured Date">
-                            <input type="text" class="form-control-text" required name="expdate"
-                                value="<?php echo $data['expdate'] ?>" placeholder="Expiry Date" title="Expiry date">
-                            <input type="text" placeholder="Price" class="form-control-text" pattern="[0-9]+" required
-                                value="<?php echo $data['rate'] ?>" name="price" title="Price">
-                            <textarea placeholder="Description" title="Description" class="form-control-textarea"
-                                name="desc" required><?php echo $data['desc'] ?></textarea>
-                            <button type="submit" class="btn btn-Shop Message" name="updateMed">Update<i
-                                    class="fa fa-pencil" aria-hidden="true"></i></button>
+                            <input type="text" placeholder="Name" class="form-control-text" value="<?php echo $data['name'] ?>" required pattern="[a-z A-Z]+" name="name" title="Medicine Name">
+                            <input type="text" placeholder="Dose" class="form-control-text" pattern="[0-9]+" required value="<?php echo $data['dose'] ?>" name="dose" title="Dose">
+                            <input type="text" class="form-control-text" required name="mfgdate" value="<?php echo $data['mfgdate'] ?>" placeholder="Manufactured Date" title="Manufactured Date">
+                            <input type="text" class="form-control-text" required name="expdate" value="<?php echo $data['expdate'] ?>" placeholder="Expiry Date" title="Expiry date">
+                            <input type="text" placeholder="Price" class="form-control-text" pattern="[0-9]+" required value="<?php echo $data['rate'] ?>" name="price" title="Price">
+                            <textarea placeholder="Description" title="Description" class="form-control-textarea" name="desc" required><?php echo $data['desc'] ?></textarea>
+                            <button type="submit" class="btn btn-Shop Message" name="updateMed">Update<i class="fa fa-pencil" aria-hidden="true"></i></button>
                         </form>
                     </div>
                 </div>
@@ -111,7 +101,7 @@ if ($result->num_rows > 0) {
     <!-- contact-form end -->
 
 
-    <?php
+<?php
 } else {
     echo "<script>alert('No Data')";
 } ?>

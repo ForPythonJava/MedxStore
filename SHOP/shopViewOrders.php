@@ -62,14 +62,14 @@ $uid = $_SESSION['uid'];
 $qry = "SELECT `cart`.*,`medicine`.*,`patient`.`name` AS `pat_name` FROM `cart`,`medicine`,`patient` WHERE `cart`.`med_id`=`medicine`.`med_id` AND `patient`.`patient_id`=`cart`.`reg_id` AND `status`!='incart' AND `medicine`.`shopid`='$uid'";
 $result = mysqli_query($conn, $qry);
 if (mysqli_num_rows($result) < 1) {
-    ?>
+?>
     <center>
         <h1 id="nodata" class="m-3">Cart is Empty</h1>
     </center>
-    <?php
+<?php
 
 } else {
-    ?>
+?>
 
     <center>
         <!-- <h1 class="m-3 bread">My Products</h1> -->
@@ -89,7 +89,7 @@ if (mysqli_num_rows($result) < 1) {
             <tbody id="tableBody">
                 <?php
                 while ($row = mysqli_fetch_array($result)) {
-                    ?>
+                ?>
                     <tr id="row{{ forloop.counter }}" style="text-align: center;">
                         <td>
                             <?php echo $row['pat_name'] ?>
@@ -119,17 +119,17 @@ if (mysqli_num_rows($result) < 1) {
                                 <a href="./viewDeliveryBoys.php?id=<?php echo $row['cartid'] ?>" class="btn btn-primary">View
                                     Delivery Boys</a>
                             <?php } else if ($row['status'] == "Assigned") { ?>
-                                    <p id="statusPay">
+                                <p id="statusPay">
                                     <?php echo $row['status'] ?>
-                                    </p>
+                                </p>
                             <?php } else { ?>
-                                    <p id="statusPay">
+                                <p id="statusPay">
                                     <?php echo $row['status'] ?>
-                                    </p>
+                                </p>
                             <?php } ?>
                         </td>
                     </tr>
-                    <?php
+                <?php
                 }
                 ?>
             </tbody>
@@ -145,12 +145,12 @@ if (mysqli_num_rows($result) < 1) {
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         // Handle search input
-        $("#searchInput").on("keyup", function () {
+        $("#searchInput").on("keyup", function() {
             var value = $(this).val().toLowerCase();
             var rows = $("#tableBody tr");
-            var matchingRows = rows.filter(function () {
+            var matchingRows = rows.filter(function() {
                 var rowText = $(this).text().toLowerCase();
                 return rowText.indexOf(value) > -1;
             });

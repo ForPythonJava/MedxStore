@@ -43,7 +43,7 @@ include '../DBConnection/dbconnection.php';
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb slider-breadcrumb">
-                        <li class="breadcrumb-item"><a href="../index.php">Home</a></li>
+                        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Shop Register
                 </nav>
             </div>
@@ -70,23 +70,17 @@ include '../DBConnection/dbconnection.php';
                     <form class="form-details" method="post" enctype="multipart/form-data">
                         <div class="image-upload text-center" style="margin-bottom: 30px">
                             <label for="file-input">
-                                <img id="img" src="../assets/images/upload.png" alt="Upload Image"
-                                    style="margin: auto" />
+                                <img id="img" src="../assets/images/upload.png" alt="Upload Image" style="margin: auto" />
                             </label>
                             <h3>Select Shop Image</h3>
                             <input id="file-input" onchange="readURL(this)" name="imgfile" type="file" />
                         </div>
-                        <input type="text" placeholder="Shop Name" class="form-control-text" required
-                            pattern="[a-z A-Z]+" name="name">
+                        <input type="text" placeholder="Shop Name" class="form-control-text" required pattern="[a-z A-Z]+" name="name">
                         <input type="email" placeholder="E-mail" class="form-control-text" required name="email">
-                        <input type="text" placeholder="Phone" class="form-control-text" pattern="[6789][0-9]{9}"
-                            maxlength="10" minlength="10" required name="phone">
-                        <input type="password" placeholder="Password" class="form-control-text" required
-                            name="password">
-                        <input type="text" placeholder="Licence [JYOT123456]" class="form-control-text" required
-                            name="licence" pattern="^[A-Z]{4}\d{6}$" maxlength="10">
-                        <textarea placeholder="Shop Address" class="form-control-textarea" name="address"
-                            required></textarea>
+                        <input type="text" placeholder="Phone" class="form-control-text" pattern="[6789][0-9]{9}" maxlength="10" minlength="10" required name="phone">
+                        <input type="password" placeholder="Password" class="form-control-text" required name="password">
+                        <input type="text" placeholder="Licence [JYOT123456]" class="form-control-text" required name="licence" pattern="^[A-Z]{4}\d{6}$" maxlength="10">
+                        <textarea placeholder="Shop Address" class="form-control-textarea" name="address" required></textarea>
                         <button type="submit" class="btn btn-Shop Message" name="shopReg">SignUp
                             <i class="fas fa-long-arrow-alt-right"></i></button>
                     </form>
