@@ -13,12 +13,8 @@ $uid = $_SESSION['uid'];
 
     <!-- stylesheet -->
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;531;600;700;800;900&amp;display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;531;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="../assets/css/themify-icons.css">
     <link rel="stylesheet" href="../assets/css/all.min.css">
@@ -49,12 +45,9 @@ $uid = $_SESSION['uid'];
                 <div class="col-xl-6 col-lg-12">
                     <nav class="navbar navbar-expand-lg main-menu">
                         <a class="navbar-brand" href="index.html">
-                            <h2 style="font-family: 'Lobster', cursive;"><b>MED</b><span
-                                    style="color: red;">X</span><b>STORE</b></h2>
+                            <h2 style="font-family: 'Lobster', cursive;"><b>MED</b><span style="color: red;">X</span><b>STORE</b></h2>
                         </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-bars"></i>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -63,8 +56,7 @@ $uid = $_SESSION['uid'];
                                     <a class="nav-link" href="deliveryHome.php">Home</a>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown"
-                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         View
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -89,14 +81,12 @@ $uid = $_SESSION['uid'];
                         </div>
                         <div class="header-right-menu">
                             <ul>
+                                <!-- <li class="sales-cart">
+                                    <span class="user-account">Cart</span> <a href="#"><i
+                                            class="fas fa-shopping-cart mt-2 mr-3"></i></a>
+                                </li> -->
                                 <li>
-                                    <a href="#"><i class="far fa-user-circle"></i></a>
-                                    <span class="user-account">My Account</span>
-                                </li>
-                                <li class="sales-cart">
-                                    <a href="#"><i class="fas fa-shopping-cart"></i> <span
-                                            class="sold-item">0</span></a>
-                                    <span class="sales-price">$0.00</span>
+                                    <a href="../COMMON/login.php" class="btn btn-primary p-2" id="rounded">LOGOUT</a>
                                 </li>
                             </ul>
                         </div>
@@ -118,8 +108,7 @@ $uid = $_SESSION['uid'];
                             <h1 class="main-title">N95 Cone Style Particulate <br>
                                 Respirator Mask</h1>
                             <p class="simple-content">Stay safe, stay home. Let's stop it together</p>
-                            <a href="shop.html" class="btn btn-Shop">Shop Now<i
-                                    class="fas fa-long-arrow-alt-right"></i></a>
+                            <a href="shop.html" class="btn btn-Shop">Shop Now<i class="fas fa-long-arrow-alt-right"></i></a>
                         </div>
                         <div class="banner-image">
                             <img src="../assets/images/banner-img1.png" alt="img">
@@ -134,8 +123,7 @@ $uid = $_SESSION['uid'];
                                     <h2 class="main-title">Drug Buster Drug Disposal <br>
                                         System</h2>
                                     <p class="simple-content">Stay safe, stay home. Let's stop it together</p>
-                                    <a href="shop.html" class="btn btn-Shop">Shop Now<i
-                                            class="fas fa-long-arrow-alt-right"></i></a>
+                                    <a href="shop.html" class="btn btn-Shop">Shop Now<i class="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                                 <div class="banner-image">
                                     <img src="../assets/images/banner-img2.png" alt="img">
@@ -148,8 +136,7 @@ $uid = $_SESSION['uid'];
                                     <h2 class="main-title">Deluxe Cut N' Crush <br>
                                         Pill Crusher</h2>
                                     <p class="simple-content">Stay safe, stay home. Let's stop it together</p>
-                                    <a href="shop.html" class="btn btn-Shop">Shop Now<i
-                                            class="fas fa-long-arrow-alt-right"></i></a>
+                                    <a href="shop.html" class="btn btn-Shop">Shop Now<i class="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                                 <div class="banner-image">
                                     <img src="../assets/images/banner-img3.png" alt="img">
@@ -188,8 +175,7 @@ $uid = $_SESSION['uid'];
                         <div class="image">
                             <img src="../assets/images/icon3.png" alt="img">
                         </div>
-                        <a href="shop.html" class="title">Independent Living <i
-                                class="fas fa-long-arrow-alt-right"></i></a>
+                        <a href="shop.html" class="title">Independent Living <i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-3 col-md-4">
@@ -248,8 +234,7 @@ $uid = $_SESSION['uid'];
                                         <h5 class="product-name">Micropore Surgical Tape</h5>
                                     </a>
                                     <span class="price">$45.00</span>
-                                    <a href="single-product.html" class="btn btn-cart"><i
-                                            class="fas fa-shopping-cart"></i> Add to
+                                    <a href="single-product.html" class="btn btn-cart"><i class="fas fa-shopping-cart"></i> Add to
                                         cart</a>
                                 </div>
                             </div>
@@ -264,8 +249,7 @@ $uid = $_SESSION['uid'];
                                         <h5 class="product-name">Barrier Lab Coat</h5>
                                     </a>
                                     <span class="price">$45.00</span>
-                                    <a href="single-product.html" class="btn btn-cart"><i
-                                            class="fas fa-shopping-cart"></i> Add to
+                                    <a href="single-product.html" class="btn btn-cart"><i class="fas fa-shopping-cart"></i> Add to
                                         cart</a>
                                 </div>
                             </div>
@@ -280,8 +264,7 @@ $uid = $_SESSION['uid'];
                                         <h5 class="product-name">Arcan Low Profile</h5>
                                     </a>
                                     <span class="price">$45.00</span>
-                                    <a href="single-product.html" class="btn btn-cart"><i
-                                            class="fas fa-shopping-cart"></i> Add to
+                                    <a href="single-product.html" class="btn btn-cart"><i class="fas fa-shopping-cart"></i> Add to
                                         cart</a>
                                 </div>
                             </div>
@@ -296,8 +279,7 @@ $uid = $_SESSION['uid'];
                                         <h5 class="product-name">PlusPharma Vitamin</h5>
                                     </a>
                                     <span class="price">$45.00</span>
-                                    <a href="single-product.html" class="btn btn-cart"><i
-                                            class="fas fa-shopping-cart"></i> Add to
+                                    <a href="single-product.html" class="btn btn-cart"><i class="fas fa-shopping-cart"></i> Add to
                                         cart</a>
                                 </div>
                             </div>
@@ -319,8 +301,7 @@ $uid = $_SESSION['uid'];
                             <span class="pre-text">Diabetes Monitors</span>
                             <h2 class="main-title">Home Health Care</h2>
                             <span class="price">$35.00</span>
-                            <a href="shop.html" class="btn btn-Shop">Shop Now <i
-                                    class="fas fa-long-arrow-alt-right"></i></a>
+                            <a href="shop.html" class="btn btn-Shop">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
                         </div>
                         <div class="offer">
                             <span>15% <br> off</span>
@@ -333,8 +314,7 @@ $uid = $_SESSION['uid'];
                             <span class="pre-text">Baby Health & Everyday Care</span>
                             <h2 class="main-title">Mom & Baby Care</h2>
                             <span class="price">$78.00</span>
-                            <a href="shop.html" class="btn btn-Shop">Shop Now <i
-                                    class="fas fa-long-arrow-alt-right"></i></a>
+                            <a href="shop.html" class="btn btn-Shop">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
                         </div>
                         <div class="offer">
                             <span>10% <br> off</span>
@@ -347,8 +327,7 @@ $uid = $_SESSION['uid'];
                             <span class="pre-text">Medical Containers</span>
                             <h2 class="main-title">Oxygen Therapy</h2>
                             <span class="price">$235.00</span>
-                            <a href="shop.html" class="btn btn-Shop">Shop Now <i
-                                    class="fas fa-long-arrow-alt-right"></i></a>
+                            <a href="shop.html" class="btn btn-Shop">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
                         </div>
                         <div class="offer">
                             <span>25% <br> off</span>
@@ -395,8 +374,7 @@ $uid = $_SESSION['uid'];
                                 <div class="product-content">
                                     <span class="price">$45.00</span>
                                     <h5 class="product-name">Head Covers</h5>
-                                    <a href="single-product.html" class="btn btn-cart"><i
-                                            class="fas fa-shopping-cart"></i> Add to
+                                    <a href="single-product.html" class="btn btn-cart"><i class="fas fa-shopping-cart"></i> Add to
                                         cart</a>
                                 </div>
                             </div>
@@ -409,8 +387,7 @@ $uid = $_SESSION['uid'];
                                 <div class="product-content">
                                     <span class="price">$45.00</span>
                                     <h5 class="product-name">Fitness & Rehab</h5>
-                                    <a href="single-product.html" class="btn btn-cart"><i
-                                            class="fas fa-shopping-cart"></i> Add to
+                                    <a href="single-product.html" class="btn btn-cart"><i class="fas fa-shopping-cart"></i> Add to
                                         cart</a>
                                 </div>
                             </div>
@@ -423,8 +400,7 @@ $uid = $_SESSION['uid'];
                                 <div class="product-content">
                                     <span class="price">$45.00</span>
                                     <h5 class="product-name">Sharps Containers</h5>
-                                    <a href="single-product.html" class="btn btn-cart"><i
-                                            class="fas fa-shopping-cart"></i> Add to
+                                    <a href="single-product.html" class="btn btn-cart"><i class="fas fa-shopping-cart"></i> Add to
                                         cart</a>
                                 </div>
                             </div>
@@ -437,8 +413,7 @@ $uid = $_SESSION['uid'];
                                 <div class="product-content">
                                     <span class="price">$45.00</span>
                                     <h5 class="product-name">GeriCare Magnesium</h5>
-                                    <a href="single-product.html" class="btn btn-cart"><i
-                                            class="fas fa-shopping-cart"></i> Add to
+                                    <a href="single-product.html" class="btn btn-cart"><i class="fas fa-shopping-cart"></i> Add to
                                         cart</a>
                                 </div>
                             </div>
@@ -451,8 +426,7 @@ $uid = $_SESSION['uid'];
                                 <div class="product-content">
                                     <span class="price">$45.00</span>
                                     <h5 class="product-name">GeriCare Magnesium</h5>
-                                    <a href="single-product.html" class="btn btn-cart"><i
-                                            class="fas fa-shopping-cart"></i> Add to
+                                    <a href="single-product.html" class="btn btn-cart"><i class="fas fa-shopping-cart"></i> Add to
                                         cart</a>
                                 </div>
                             </div>
@@ -465,8 +439,7 @@ $uid = $_SESSION['uid'];
                                 <div class="product-content">
                                     <span class="price">$45.00</span>
                                     <h5 class="product-name">Lab N98 Face Mask</h5>
-                                    <a href="single-product.html" class="btn btn-cart"><i
-                                            class="fas fa-shopping-cart"></i> Add to
+                                    <a href="single-product.html" class="btn btn-cart"><i class="fas fa-shopping-cart"></i> Add to
                                         cart</a>
                                 </div>
                             </div>
